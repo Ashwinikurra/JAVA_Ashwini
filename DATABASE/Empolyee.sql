@@ -1,0 +1,31 @@
+USE DMANTZ;
+create table empolyee(
+EMPNO int(5),
+ENAME varchar(15) not null,
+JOB varchar(25) not null,
+HIREDATE date,
+MGR int(5),
+SAL int(10),
+COMM int(5),
+DEPTNO int(3),
+primary key(EMPNO)
+);
+insert into empolyee
+values
+(7499,'ALLEN','SALESMAN','1981-02-20',7698,1600,300 ,30);
+SELECT* FROM empolyee;
+insert into empolyee
+values
+(7521,'WARD','SALESMAN','1981-02-22',7698,1250,300 ,30),
+(7566,'JONES','MANAGER','1981-04-02',7839,2975,500 ,30),
+(7654,'MARTIN','SALESMAN','1981-09-28',7698,1250,null ,30),
+(7698,'BLAKES','MANAGER','1981-05-01',7839,2850,null ,30),
+(7782,'CLARK','MANAGER','1981-06-09',7839,2450,null ,30),
+(7788,'SCOTT','ANALYST','1987-04-19',7566,3000,null ,30),
+(7839,'KING','PRESIDENT','1981-11-17',null,5000,null ,30),
+(7844,'TURNER','SALESMAN','1981-09-08',7698,1500,null,30),
+(7876,'ADAMS','CLERK','1987-05-23',7788,1100,null ,30),
+(7900,'JAMES','CLERK','1981-12-03',7698,950,null ,30),
+(7902,'FORD','ANALYST','1981-12-03',7566,9300,0 ,30),
+(7934,'MILLER','CLERK','1982-01-23',7782,1300,null ,30);
+select* FROM empolyee;

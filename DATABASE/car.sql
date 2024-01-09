@@ -1,0 +1,1 @@
+insert into tejm28.Car(1586,'audi',5000000,'black',150,200)tejm28tejm28
