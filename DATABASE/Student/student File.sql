@@ -74,3 +74,5 @@ select*
 from ncc;
 select*
 from sports;
+alter table sports
+rename column SportsName TO sports;
